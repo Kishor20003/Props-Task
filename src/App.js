@@ -1,24 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import ParentComp from "./ParentComp";
+import ProfileCard from "./ProfileCard";
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  return (<div>
+   <ParentComp></ParentComp>
+   <ProfileCard name="Sundar Pichai" img="https://th.bing.com/th/id/OSK.HERObURWeNzdo9aDPplozDf1RFbJS_LLWO-CxJxtFCL1gZw?rs=1&pid=ImgDetMain" bio="Cheif Executive Officer of Google"></ProfileCard>
+   </div>
   );
 }
 
